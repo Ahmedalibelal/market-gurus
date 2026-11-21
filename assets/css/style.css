@@ -137,6 +137,27 @@ ul { list-style: none; }
         padding: 20px; 
         box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
     }
+    /* حركات الانتقال (Animations) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* تحسين مظهر الأسئلة الشائعة */
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.faq-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
     .nav-links.show { display: flex; }
     .nav-links a { padding: 10px 0; border-bottom: 1px solid #eee; width: 100%; text-align: center; }
     .nav-links a:last-child { border-bottom: none; }
