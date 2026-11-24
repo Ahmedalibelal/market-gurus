@@ -31,25 +31,29 @@
             <h1 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h1>
             <p class="text-center" style="margin-bottom: 40px;" data-ar="نحن هنا لمساعدتك على النمو. أرسل لنا رسالة وسنقوم بالرد عليك في أقرب وقت." data-en="We are here to help you grow. Send us a message and we will reply as soon as possible.">نحن هنا لمساعدتك على النمو. أرسل لنا رسالة وسنقوم بالرد عليك في أقرب وقت.</p>
             
-            <form class="contact-form">
-                <div class="form-group">
-                    <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
-                    <input type="email" required>
-                </div>
-                <div class="form-group">
-                    <label data-ar="الموضوع" data-en="Subject">الموضوع</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label data-ar="الرسالة" data-en="Message">الرسالة</label>
-                    <textarea required></textarea>
-                </div>
-                <button type="submit" class="btn-primary" style="width: 100%;" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
-            </form>
+            <form class="contact-form" action="https://formsubmit.co/markettgurusksa@gmail.com" method="POST">
+    <!-- إعدادات إضافية للخدمة -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    
+    <div class="form-group">
+        <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+        <input type="text" name="name" required>
+    </div>
+    <div class="form-group">
+        <label data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+        <input type="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label data-ar="الموضوع" data-en="Subject">الموضوع</label>
+        <input type="text" name="subject" required>
+    </div>
+    <div class="form-group">
+        <label data-ar="الرسالة" data-en="Message">الرسالة</label>
+        <textarea name="message" required></textarea>
+    </div>
+    <button type="submit" class="btn-primary" style="width: 100%;" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+</form>
         </div>
     </section>
 
