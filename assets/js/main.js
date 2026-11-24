@@ -39,4 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         }
     });
+    // 5. إضافة زر الواتساب العائم تلقائياً لكافة الصفحات
+    const waButton = document.createElement('a');
+    waButton.href = "https://wa.me/201090290091";
+    waButton.className = "whatsapp-float";
+    waButton.target = "_blank";
+    waButton.setAttribute("aria-label", "Chat on WhatsApp");
+    waButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
+    document.body.appendChild(waButton);
 });
